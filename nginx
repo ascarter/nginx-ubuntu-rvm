@@ -19,7 +19,7 @@
 #
 # processname: nginx
 # config:      /opt/nginx/conf/nginx.conf
-# pidfile:     /var/run/nginx.pid
+# pidfile:     /opt/nginx/logs/nginx.pid
 # Provides:    nginx
 #
 # Authoer: Andrew Carter
@@ -108,7 +108,7 @@ DAEMON=/opt/nginx/sbin/nginx
 PS="nginx"
 PIDNAME="nginx"				#lets you do $PS-slave
 PIDFILE=$PIDNAME.pid                    #pid file
-PIDSPATH=/var/run
+PIDSPATH=/opt/nginx/logs
 
 DESCRIPTION="Nginx Server..."
 
